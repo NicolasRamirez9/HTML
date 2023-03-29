@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Mi primera web</title>
+    <!-- CSS: style le asigna un estilo a lo que quiera, en este caso, a table, th y td-->
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- style="width: 500px;" le da mas separacion a las columnas y su contenido-->
+    <table style="width: 500px;">
+        <!-- thead sirve para agrupar elementos que se encuentran en la cabecera de nuestras tablas-->
+        <thead>
+            <!-- tr es table row (fila dentro de nuestra tabla)-->
+            <tr>
+                <!-- th header de la tabla, cada vez que coloquemos un th, se generara una columna nueva-->
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <!-- tbody sirve para agrupar todas las filas que pertenezcan al cuerpo de nuestra tabla-->
+        <tbody>
+            <tr>
+                <!-- td se utiliza para definir elementos estandares que se encuentran dentro de las celdas de nuestras tablas, cada vez que coloquemos un td, se generara una celda nueva-->
+                <td>Tablet</td>
+                <td>Gratis</td>
+            </tr>
+            <tr>
+                <td>Airpods Pro</td>
+                <td>$860</td>
+            </tr>
+            <tr>
+                <td>Playstation 5</td>
+                <td>$1300</td>
+            </tr>
+            <tr>
+                <td>Iphone 14 pro max red 264 gb</td>
+                <td>$1900</td>
+            </tr>
+        </tbody>
+        <!-- tfoot sirve para agregarle un pie a nuestra tabla-->
+        <tfoot>
+            <td></td>
+            <td>Total: $4060</td>
+        </tfoot>
+    </table>
+    <!-- ul es lista no ordenada (aparecen los elementos como items)-->
+    <ul>
+        <!-- li definimos los elementos de la lista-->
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <!-- ol es lista ordenada (aparecen los elementos enumerados)-->
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ol>
+    <!-- si por ejemplo agrego la sentencia value=50 se va a enumerar a partir del numero 50-->
+    <ol>
+        <li value="50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <!-- De esta forma puedo anidar distintos tipos de listas-->
+        <li>
+            <ol>
+                <!-- podemos cambiar el estilo poniendo "list-style-type: 'el estilo que querramos';"-->
+                <li style="list-style-type: lower-alpha;">Sub elemento 1</li>
+                <li style="list-style-type: lower-alpha;">Sub elemento 2</li>
+                <li style="list-style-type: lower-alpha;">Sub elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+
+
+
+    <!-- en action colocamos la ruta donde queremos que se envie nuestro formulario,
+        con method la forma que la enviemos(get o post)"-->
+    <form action="/formulario" method="post">
+        <!-- label creamos un formulario nuevo, con for-->
+        <label for="nombre">Nombre</label>
+        <input value="Nico" type="text" id="nombre" name="nombre" placeholder="Nombre"/>
+        <!-- br define un salto de linea-->
+        <br>
+        <label for="apellido">Apellido</label>
+        <input value="Ramirez" type="text" id="apellido" name="apellido" placeholder="Apellido"/>
+        <br>
+        <label for="comentario">Comentario</label>
+        <br>
+        <!-- textarea define una casilla para comentarios-->
+        <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario">Este es un valor por defecto</textarea>
+        <br>
+        <button type="button">Tipo boton</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
+    </form>
+    <!-- h1-h6 el heading esta indexado a los motores de busqueda, es decir, google va a anidar nuestro sitio dependiendo de los headings que utilicemos-->
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <h4>Mi cuarto heading</h4>
+    <h5>Mi quinto heading</h5>
+    <h6>Culo</h6>
+    <!-- 'p' agregamos parrafos de texto-->
+    <p>Culotetaculo 1234 culo.</p>
+    <p>Culotetaculo 1234 culo.</p>
+    <!-- hr agregamos una linea para separar nuestros headings y/o parrafos-->
+    <hr>
+    <h2>Sexo analll</h2>
+    <!-- span sirve para resalta de alguna forma una parte de nuestro texto-->
+    <p>Y ahora una cancion: <span style="color:red">
+        me encanta el pito</span> en la <br>
+        cola lalalaalal
+    </p>
+    <!-- 'a' sirve para añadir enlaces en nuestra pagina
+         con 'target="_blanks"' el link se abrira una pestaña nueva, sin este, la pagina se va abrir en la nuestra
+         en 'href=""' colocamos la pagina a la que querramos redireccionar-->
+    <a target="_blanks" href="https://www.google.com">Ir a google</a>
+    <img src="img/screamer.jpg" height="400"s/>
+    <audio controls>
+        <source src="grito.mp3" type="audio/mp3">
+            Tu navegador no soporta audio HTML5.
+    </audio>
+</body>
+</html>

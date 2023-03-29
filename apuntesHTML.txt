@@ -1,0 +1,27 @@
+<label>
+<input>
+Type = "text" es el default, se genera una casilla que recibe un texto.
+Type = "email" casilla que espera un mail.
+type = "submit" genera un boton de submit.
+Type = "password" oculta el texto escrito como si fuera una contraseña.
+Type = "radio" aparece un puntito seleccionador llamado radio.
+Type = "checkbox" aparece un checkbox.
+Type = "file" aparece un boton que recibe un archivo.
+type = "color" aparece un boton para seleccionar el color.
+type = "date" para seleccionar una fecha.
+type = "number" casilla que solamente te deja ingresar numeros.
+
+<button>
+Type = "button" genera un boton, nosotros especificamos que tipo de comportamiento
+queremos que tenga, pero eso se hace con JavaScript. 
+Es mucho mas personalizable que el type submit.
+
+Type = "reset" si nosotros cambiamos los valores por defecto que tienen los formularios,
+este boton hace que vuelvan a tener dichos valores.
+
+Type = "submit" es el default, trata de enviar el formulario a la ruta que le hayamos 
+indicado en 'form action="/ruta"'utilizando el metodo que le hayamos indicado
+('method="post"' o 'method="get"').
+
+puedo agregar una imagen a un boton: 
+<button type="button"><img src="img/screamer.jpg" height="400"s/>Tipo boton</button>

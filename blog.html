@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi blog</title>
+</head>
+<body>
+    <!-- header se utiliza para poder agrupar links, imagenes o logos de nuestra pagina, en este caso el titulo-->
+    <header>
+        <!-- id es un atributo unico el cual nos va a servir a la hora que querramos interactuar mediante JS o querramos darle un estilo-->
+        <h1 id="titulo">Blog de lo turbio</h1>
+    </header>
+    <!-- div tiene la misma funcionalidad que section, pero es mas antigua -->
+    <div>
+        <p>Soy un parrafo dentro de una etiqueta div</p>
+    </div>
+    <!-- section sirve para colocar las secciones de nuestra pagina, aca van las etiquetas-->
+    <section>
+        <!-- article se utiliza para definir el contenido, en este caso titulo, descripcion, textos variados, imagenes, etc.
+             si quisieramos asignarle un identificador a mas de un elemento, y quiero utilizar el mismo texto para identificarlo, se utiliza class
+             igualmente, se recomienda utilizar diferentes nombres -->
+        <article  class="post">
+            <h2>Titulo de mi post</h2>
+            <p>Descripcion de mi post</p>
+            <img src="img/screamer.jpg" width="400"/>
+            <p>Texto del articulo, es para probar. SATANAS ES MI DIOS</p>
+        </article>
+        <article class="post">
+            <h2>Titulo de mi post 2</h2>
+            <p>Descripcion de mi post 2</p>
+            <img src="img/sexo.jpg" width="400"/>
+            <p>Texto del articulo, es para probar 2. ÉL está de regreso</p>
+        </article>
+        <article class="post">
+            <h2>Titulo de mi post 3</h2>
+            <p>Descripcion de mi post 3</p>
+            <img src="img/sexo2.jpg" width="400"/>
+            <p>Texto del articulo, es para probar 3. Si te escondes, te encontrará</p>
+        </article>
+    </section>
+    <!-- footer sirve para colocar el copyright, como navegar en nuestra pagina, info relacionada al autor, etc.-->
+    <footer>
+        <a href="#titulo">Ir al comienzo</a>
+        <a href="mailto:nicocai98@gmail.com">Contactame aqui</a>
+        <p>Copyright 2023</p>
+    </footer>
+</body>
+</html>
